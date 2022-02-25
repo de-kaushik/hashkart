@@ -1,0 +1,21 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        -id: order
+        uri: lb://ORDER
+        predicates:
+          -Path=/order/**
+
+
+
+
+
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#         "-id"
+#          : order
+#        predicates: "-Path=/order/**"
+#        uri: "lb://ORDER"
